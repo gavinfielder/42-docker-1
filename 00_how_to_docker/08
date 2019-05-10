@@ -1,0 +1,16 @@
+docker run -it --rm alpine /bin/sh
+
+# ----- Prompt ----------------------------------------------------------------
+# Launch a shell from an alpine container, and make sure that you can interact
+# directly with the container via your terminal, and that the container deletes
+# itself once the shell’s execution is done.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# -it : run in interactive mode (i and t are separate, but usually used
+#       together like this when used with `docker run`. This opens the command
+#       (in this case, a shell) in interactive mode so you can explore the
+#       container.
+# --rm : remove when done
+# alpine is the image and /bin/sh is the command
+# -----------------------------------------------------------------------------

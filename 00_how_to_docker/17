@@ -1,0 +1,10 @@
+docker ps
+
+# ----- Prompt ----------------------------------------------------------------
+# Display all the currently active containers on the Char virtual machine.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# Seems to be an alias for `docker container ls`. At least, they do the same thing
+# ps -a includes containers that have stopped
+# -----------------------------------------------------------------------------

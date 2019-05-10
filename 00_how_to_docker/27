@@ -1,0 +1,15 @@
+docker service logs -f $(docker service ps engineering-bay -f "name=engineering-bay.1" -q)
+
+
+docker swarm init --advertise-addr $(docker-machine ip Char)
+
+# ----- Prompt ----------------------------------------------------------------
+# Get the real-time logs of one the tasks of the engineering-bay service.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# The dollar command gets the id of the service replica
+# `docker service ps engineering-bay` by itself shows more information about
+# each replica
+# -f : as before, follow the log in real time
+# -----------------------------------------------------------------------------

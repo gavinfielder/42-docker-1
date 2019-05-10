@@ -1,0 +1,5 @@
+docker pull hello-world
+
+# ----- Prompt ----------------------------------------------------------------
+# Get the hello-world container from the Docker Hub, where it’s available.
+# -----------------------------------------------------------------------------

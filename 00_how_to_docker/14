@@ -1,0 +1,18 @@
+docker run -d -p 8080:80 --name lair --link spawning-pool:mysql wordpress
+
+# ----- Prompt ----------------------------------------------------------------
+# Launch a wordpress container as a background task, just for fun. The container
+# should be named lair, its 80 port should be bound to the 8080 port of the virtual
+# machine, and it should be able to use the spawning-pool container as a database
+# service. You can try to access lair on your machine via a web browser, with the
+# IP address of the virtual machine as a URL.
+# Congratulations, you just deployed a functional Wordpress website in two commands!
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# --link : the documentation just says this links another container
+#          the :mysql is an alias for the link that is created
+# The web browser test says this cannot establish a databse connection.
+# I assume this is because no authentication is provided when testing it this
+# way.
+# -----------------------------------------------------------------------------

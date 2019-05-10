@@ -1,0 +1,11 @@
+docker service ls
+
+# ----- Prompt ----------------------------------------------------------------
+# List all the services of the local swarm.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# docker service ls lists all services on the selected machine, but since the
+# selected machine is now a manager, this is also listing the services on the
+# swarm (?)
+# -----------------------------------------------------------------------------

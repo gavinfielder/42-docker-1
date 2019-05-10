@@ -1,0 +1,10 @@
+docker logs -f spawning-pool
+
+# ----- Prompt ----------------------------------------------------------------
+# Look up the spawning-pool container’s logs in real time without running its shell.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# -f : follow the log (basically keeps a channel open and ports all new log
+#      data to stdout). Without it, it gets the current logs and then exits.
+# -----------------------------------------------------------------------------

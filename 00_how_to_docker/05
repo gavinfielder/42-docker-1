@@ -1,0 +1,10 @@
+docker run hello-world
+
+# ----- Prompt ----------------------------------------------------------------
+# Launch the hello-world container, and make sure that it prints its welcome
+# message, then leaves it.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# docker run --rm hello-world will remove it when it exits
+# -----------------------------------------------------------------------------

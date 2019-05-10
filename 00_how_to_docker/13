@@ -1,0 +1,6 @@
+docker inspect -f '{{.Config.Env}}' spawning-pool
+
+# ----- Prompt ----------------------------------------------------------------
+# Print the environment variables of the spawning-pool container in one command,
+# to be sure that you have configured your container properly.
+# -----------------------------------------------------------------------------

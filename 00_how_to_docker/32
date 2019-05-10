@@ -1,0 +1,11 @@
+docker rm -f $(docker ps -a -q)
+
+# ----- Prompt ----------------------------------------------------------------
+# Force quit and delete all the containers (whatever their status), in one command.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# The -q option of docker service ls only shows ids, which are passed to 
+# docker  rm. 
+# -f : force
+# -----------------------------------------------------------------------------

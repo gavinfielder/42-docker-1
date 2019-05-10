@@ -1,0 +1,10 @@
+docker inspect -f '{{.NetworkSettings.IPAddress}}' overlord
+
+# ----- Prompt ----------------------------------------------------------------
+# Get the internal IP address of the overlord container without starting its
+# shell and in one command.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# -f : format. The following string selects the field(s) to display
+# -----------------------------------------------------------------------------

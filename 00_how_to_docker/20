@@ -1,0 +1,22 @@
+docker swarm init --advertise-addr $(docker-machine ip Char)
+
+# ----- Prompt ----------------------------------------------------------------
+# Create a local swarm, the Char virtual machine should be its manager.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# The currently selected machine (using environment variables) will
+# advertise its own IP address to other members of the swarm for 
+# "API access and overlay networking"
+# https://docs.docker.com/engine/reference/commandline/swarm_init/u
+#
+# This is the output of running this command (may need it later?):
+#
+# Swarm initialized: current node (kf0867q2efmnkny8gikstzwo2) is now a manager.
+#
+# To add a worker to this swarm, run the following command:
+#
+#    docker swarm join --token SWMTKN-1-3vyw98okyfozw5hrz6dcstu2qqb1o5so48pqvutlaodsxle1p2-ead59s770odybgrjjobl2x95q 192.168.99.100:2377
+#
+# To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+# -----------------------------------------------------------------------------

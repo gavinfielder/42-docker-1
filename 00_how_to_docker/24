@@ -1,0 +1,14 @@
+docker service create -d --network overmind --name orbital-command -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=root rabbitmq
+
+# ----- Prompt ----------------------------------------------------------------
+# Launch a rabbitmq SERVICE that will be named orbital-command. You should
+# define a specific user and password for the RabbitMQ service, they can be
+# whatever you want. This service will be on the overmind network.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# -d : detach; exits immediately instead of "waiting for the service to converge"
+# --network attaches the service to the specified network
+# Rabbitmq is an "open source multi-protocol messaging broker"
+# https://hub.docker.com/_/rabbitmq
+# -----------------------------------------------------------------------------

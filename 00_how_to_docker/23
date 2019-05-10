@@ -1,0 +1,10 @@
+docker network create -d overlay overmind
+
+# ----- Prompt ----------------------------------------------------------------
+# Create an overlay-type internal network that you will name overmind.
+# -----------------------------------------------------------------------------
+
+# ----- Notes -----------------------------------------------------------------
+# -d is for driver, which specifies network type
+# `docker network ls` shows networks
+# -----------------------------------------------------------------------------
